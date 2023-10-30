@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Practice</title>
+
+    <style>
+        body{
+            background-color: aquamarine;
+            color: rgb(36, 6, 6);
+        }
+         *{
+            margin-left: 50px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+        .sub1{
+            text-align: center;
+        }
+        .sub{
+            background-color: rgb(235, 95, 144);
+            height: 30px;
+        }
+        .sub:hover,.res:hover{
+            background-color: aqua;
+            border-radius: 20px;
+            transition-duration: 4s;
+            cursor: pointer;
+        }
+        .res{
+            background-color: grey;
+            height: 30px;
+            width: 55px;
+        }
+       .link{
+        text-decoration:none;
+        color: rgb(255, 53, 86);
+        border:2px dotted black;
+        background-color: rgb(145, 189, 255);
+       }
+       .a{
+        position: relative;
+       padding: 40px;
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        background: blue;
+        opacity: 0.8;
+       }
+       .f{
+        background-color: red;
+        height: 300px;
+        width: 500px;
+        margin-top: 4px;
+        float: left;
+       }
+       .f1{
+        background-color: red;
+        height: 300px;
+        width: 500px;
+        margin-top: 4px;
+        float: left;
+       }
+       .f2{
+        clear: both;
+       }
+       .w{
+            height: 400px;
+            background-color: rgb(230, 255, 0);
+            color: rgb(0, 0, 0);
+            font-size: 50px;
+            text-align: center;
+        }
+        .b{
+            height: 40px;
+            width: 70px;
+            background-color: pink;
+            color: black;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>FORM</h1>
+
+    <form action="">
+        <fieldset class="field">
+            <legend> Personal Details</legend>
+            <label for="">Name-</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name"> <br> <br>
+
+            <div id="strOut">
+
+            </div>
+
+            <label for="">Father Name-</label>
+            <input type="text" name="f-name" id="f-name" placeholder="eg. Danny wick"> <br> <br>
+            <label for="">Date of Birth-</label>
+            <input type="date" name="date" id="cal">
+        </fieldset>
+        <fieldset class="field">
+            <legend> Permanent Address</legend>
+            <label for="">At-</label>
+            <input type="text" name="at" id="at" placeholder="eg. Village name"> <br> <br>
+            <label for="">Po-</label>
+            <input type="text" name="at" id="po" placeholder="eg. Post Office"> <br> <br>
+            <label for="">Dist-</label>
+            <select name="dist" id="select"> <br> <br>
+                <option value="" name="dist">Puri</option>
+                <option value="" name="dist">Jajpur</option>
+                <option value="" name="dist">Khurdha</option>
+                <option value="" name="dist">Cuttack</option>
+                <option value="" name="dist">Kendrapada</option>
+                <option value="" name="dist">Dhenkanal</option>
+            </select>
+
+        </fieldset>
+
+        <fieldset class="field">
+            <legend> Present Address</legend>
+            <label for="">At-</label>
+            <input type="text" name="at" id="at" placeholder="eg. Village name" class="st"> <br> <br>
+            <label for="">Po-</label>
+            <input type="text" name="at" id="po" placeholder="eg. Post Office"> <br> <br>
+            <label for="">Dist-</label>
+            <select name="dist" id="select"> <br><br>
+                <option value="" name="dist">Puri</option>
+                <option value="" name="dist">Jajpur</option>
+                <option value="" name="dist">Khurdha</option>
+                <option value="" name="dist">Cuttack</option>
+                <option value="" name="dist">Kendrapada</option>
+                <option value="" name="dist">Dhenkanal</option>
+            </select>
+        </fieldset>
+        <label for="">select state</label> 
+     <select name="state" id="select"> <br><br>
+            <option value="" name="state">Odisha</option>
+            <option value="" name="state">Punjab</option>
+            <option value="" name="state">Haryana</option>
+            <option value="" name="state">Chhatisgarh</option>
+            <option value="" name="state">Gujurat</option>
+        </select> <br> <br>
+        <label for="">E-Mail</label>
+        <input type="email" name="email" value=""> <br><br>
+        <label for="">Mob-</label>
+        <input type="number" name="number" value=""> <br><br>
+        <label for="">User Id-</label>
+        <input type="Userid" name="user" value=""> <br> <br>
+        <label for="">Password</label>
+        <input type="password" name="pass" value=""> <br><br>
+        <div class="sub1">
+            <input type="submit" name="submit" id="" value="submit" class="sub">
+            <input type ="reset" name="submit" id="" value="reset" class="res" />
+        </div>
+
+    </form>
+   
+</body>
+
+</html>
